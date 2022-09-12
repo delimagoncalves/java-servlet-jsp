@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Date;
 
 import jakarta.servlet.ServletException;
@@ -15,6 +16,7 @@ public class DataHora extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		LocalDate date = LocalDate.now();
+		LocalTime time = LocalTime.now();
 		
 		PrintWriter writer = resp.getWriter();
 		
@@ -24,7 +26,9 @@ public class DataHora extends HttpServlet {
 		"</head>"+
 		"<body>"+
 		"<h1>Data atual</h1>"+
-		"<h2>"+date+"</h2>"+
+		"<p>"+date+"</p>"+
+		"<h2>Hora atual</h2>"+
+		"<p>"+time.getHour()+":"+time.getMinute()+":"+time.getSecond()+"</p>"+
 		"</body>"+
 		"</html>");
 		
