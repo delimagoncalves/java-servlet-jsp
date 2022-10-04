@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro de Produto</title>
+
+<style>
+	div {
+		margin: 5px 0;
+	}
+</style>
+</head>
+<body>
+	<h1>Cadastro de Produto</h1>
+	
+	<fieldset>
+		<legend>Dados do Produto</legend>
+		<form action="relatorio.jsp" method="get">
+			<div>
+			<label for="descricao">Descrição: 
+				<input type="text" name="descricao">
+			</label>
+			</div>
+			<div>
+			<label for="valor">Valor: 
+				<input type="text" name="valor">
+			</label>
+			</div>
+			<div>
+			<label for="valor">Estoque: 
+				<input type="text" name="estoque">
+			</label>
+			</div>
+			<div>
+				<label for="tipo">Tipo:
+					<input type="radio" name="tipo" value="perecivel"> Perecível
+					<input type="radio" name="tipo" value="nao-perecivel"> Não Perecível
+				</label>
+			</div>
+			<input type="submit" value="Cadastrar Produto">
+		</form>
+	</fieldset>
+</body>
+</html>
