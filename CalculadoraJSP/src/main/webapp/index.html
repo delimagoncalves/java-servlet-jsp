@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculadora Simples</title>
+</head>
+<body>
+<h1>Calculadora Simples</h1>
+
+<fieldset>
+		<legend>Informe os valores</legend>
+		<form action="calculo.jsp" method="get">
+		<label for="numero1">
+		Número: <input type="text" name="numero1" id="numero1">
+		</label>
+		<label for="numero2">
+		Número: <input type="text" name="numero2" id="numero2">
+		</label>
+		<div>
+			<label>Operação: 
+				<input type="radio" name="operacao" value="soma">Somar
+				<input type="radio" name="operacao" value="multiplica">Multiplicar
+				<input type="radio" name="operacao" value="divide">Dividir
+				<input type="radio" name="operacao" value="subtrai">Subtrair
+			</label>
+		</div>
+		<input type="submit" value="Calclular">
+	</form>
+</fieldset>
+</body>
+</html>
